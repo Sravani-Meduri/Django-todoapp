@@ -20,7 +20,7 @@ pipeline {
                 script{
                     sh '''
                     echo 'Buid Docker Image'
-                    docker build -t sravanif5/todoapp:v${BUILD_NUMBER} .
+                    docker build -t sravanif5/todoapp:v${IMAGE_TAG} .
                     '''
                 }
             }
@@ -31,7 +31,7 @@ pipeline {
                 script{
                     sh '''
                     echo 'Push to Repo'
-                    docker push sravanif5/todoapp:v${BUILD_NUMBER}
+                    docker push sravanif5/todoapp:v${IMAGE_TAG}
                     '''
                 }
             }
