@@ -19,6 +19,6 @@ spec:
     spec:
       containers:
       - name: todo-app
-        image: sravanif5/todoapp:v1
+        image: sravanif5/todoapp:v2
         ports:
         - containerPort: 8000
